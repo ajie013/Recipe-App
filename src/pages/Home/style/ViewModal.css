@@ -1,0 +1,196 @@
+:root{
+    --black: #222831;
+    --grey: #393E46;
+    --teal: #00ADB5;
+    --space: #EEEEEE;
+   
+}
+
+.home-container .modal-bg{
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4546478f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container .view-modal-container{
+    position: relative;
+    width: 480px;
+    height: 500px;
+    background-color: var(--space);
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center;   */
+}
+
+.home-container .view-modal-container .content{
+  
+    /* margin: 10px; */
+    overflow-y: scroll;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+   
+}
+
+.home-container .view-modal-container .content::-webkit-scrollbar{
+    display: none;
+}
+.home-container .view-modal-container .x-mark{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.home-container .view-modal-container .x-mark:hover{
+    transform: scale(1.1);
+    color: rgb(214, 10, 10);
+}
+.home-container .view-modal-container .modal-header{
+    font-weight: bolder;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container .view-modal-container .category{
+   
+   
+    
+    margin-bottom: 10px;
+    display: flex;
+}
+.home-container .view-modal-container .category .category-label{
+    background-color: var(--grey);
+    text-align: center;
+    display: block;
+    border-radius:5px ;
+    color: white;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+.home-container .view-modal-container .modal-header .name {
+   
+    text-align: center;
+}
+.home-container .view-modal-container .modal-header .tag {
+    font-weight: lighter;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.home-container .view-modal-container .tag-wrapper{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-container .view-modal-container .tag-wrapper .tag-item{
+    padding: 5px 10px;
+    margin-left: 5px;
+    color: var(--space);
+
+    border-radius: 5px;
+    background-color: var(--grey);
+}
+
+
+.home-container .view-modal-container .meal-photo-container{
+    width: 90%;
+    height: 240px;
+  
+    display: block;
+    margin: 0 auto;
+}
+.home-container .view-modal-container .meal-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-container .view-modal-container .ingredients-header{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+.home-container .view-modal-container .ingredients-wrapper{
+    
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    background-color: var(--grey);
+}
+.home-container .view-modal-container .ingredient-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 90px;
+    padding: 10px;
+    background-color: var(--space);
+    box-shadow: 0px 0px 5px rgba(94, 93, 93, 0.297);
+    
+}
+.home-container .view-modal-container .ingredient-item .ingredient-item-photo{
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 5px rgba(28, 27, 27, 0.759));
+}
+.home-container .view-modal-container .instructions-wrapper{
+   
+}
+.home-container .view-modal-container .instructions-wrapper .instructions-header{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.home-container .view-modal-container .instructions-wrapper .instruction-text{
+    text-align: center;
+    padding: 0px 10px;
+    /* text-indent: 20px; */
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.loader-modal {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #282828;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
