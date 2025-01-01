@@ -5,8 +5,7 @@ import './style/Categories.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState, useEffect } from "react";
 import MealItem from "../Home/MealItem";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark,faCheck} from '@fortawesome/free-solid-svg-icons';
+
 
 interface categoryObj {
     idCategory: string;
@@ -27,7 +26,7 @@ interface loader{
 }
 
 const Categories: React.FC = () => {
-    const [selectedMeals, setSelectedMeals] = useState<mealType[]>([]);
+   
     const [categories, setCategories] = useState<categoryObj[] | null>(null);
     const [selectedCategory, setSelectedCategory] = useState<string>('Beef');
     const [loader, setLoader] = useState<loader>({

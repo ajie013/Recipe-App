@@ -26,14 +26,13 @@ interface mealInfo{
 
 const ViewModal : React.FC<modalProps> = ({setModalToggler,id}) =>{
 
-    const [isLoading, setIsLoading] = useState<boolean>(false);
     const [data, setData] = useState<mealInfo | null>(null);
     const [ingredients, setIngredients] = useState<ingredientsInfo[]>([])
     const [measure, setMeasure] = useState<string[]>([])
     
    
     const fetchData = () : void =>{
-        isLoading
+       
         setIngredients([])
         axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
         .then((res) => {

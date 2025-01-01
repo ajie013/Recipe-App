@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import truncateText from '../../utils/truncateText';
 import './style/MealItem.css'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ViewModal from "./ViewModal.tsx";
 
 interface Meal {
