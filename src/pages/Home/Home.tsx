@@ -45,7 +45,7 @@ const Home: React.FC = () =>{
     };
   
     const searchChange = (e: ChangeEvent<HTMLInputElement>) : void =>{
-        setSearch(prev => prev = e.target.value);
+        setSearch(e.target.value);
        
     };
 
