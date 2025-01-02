@@ -186,12 +186,14 @@
 
 .categories-container .view-modal-container{
     position: relative;
-    width: 480px;
-    height: 500px;
+    max-width: 470px;
+    width: 100%;
+    height: 420px;
     background-color: var(--space);
     border-radius: 5px;
     padding: 10px 10px;
     display: flex;
+    margin: 20px;
     flex-direction: column;
 }
 

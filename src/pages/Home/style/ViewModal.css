@@ -100,6 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 .home-container .view-modal-container .tag-wrapper .tag-item{

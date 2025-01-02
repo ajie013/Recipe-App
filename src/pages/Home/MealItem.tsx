@@ -13,10 +13,7 @@ interface Meal {
 
 interface MealItemProps {
     meal : Meal;
-    
-  
-    
-  
+
 };
 
 

@@ -82,11 +82,12 @@ const ViewModal : React.FC<modalProps> = ({setModalToggler,id}) =>{
     const CloseModal = () =>{
         setModalToggler(prev => !prev);
     };
+   
     
     return(
         <>
-            <div className='modal-bg'>
-                <div className='view-modal-container'>
+            <div className='modal-bg' onClick={CloseModal}>
+                <div className='view-modal-container' onClick={(e) => e.stopPropagation()}>
                     {data && ingredients && measure ?
                      <div className="content">
                         <div className="modal-header">
