@@ -75,9 +75,13 @@ const ViewModal : React.FC<modalProps> = ({setModalToggler,id}) =>{
         });
     };
    
-    useEffect(() =>{
+    useEffect(() => {
         fetchData();
-    },[])
+        document.body.classList.add('no-scroll'); // Disable scroll
+        return () => {
+            document.body.classList.remove('no-scroll'); // Enable scroll on cleanup
+        };
+    }, []);
 
     const CloseModal = () =>{
         setModalToggler(prev => !prev);

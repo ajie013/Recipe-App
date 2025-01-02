@@ -6,6 +6,10 @@
    
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 .home-container .modal-bg{
     z-index: 10;
     position: fixed;
@@ -30,8 +34,7 @@
     display: flex;
     margin: 20px;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center;   */
+    overflow-y: auto; /* Ensure modal itself is scrollable */
 }
 
 .home-container .view-modal-container .content{
