@@ -48,10 +48,12 @@
     font-weight: lighter;
 }
 .home-container .no-data{
+    width: 100%;
+    background-color: red;
     text-align: center;
     letter-spacing: 3px;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1rem;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -59,7 +61,7 @@
 }
 .home-container .grid-meals{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 40px;
     margin-top: 20px;
 }

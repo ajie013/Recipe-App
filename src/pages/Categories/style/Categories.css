@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px ;
+    gap: 5px ;
     background-color: var(--grey);
     padding: 10px ;
     min-height: 60px;
@@ -26,21 +26,41 @@
 .categories-container .category-filter-wrapper .category-item{
     color: white;
     transition: 0.3s ease-in-out;
- 
+    font-size: 0.7rem;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 5px 5px;
 }
 .categories-container .category-filter-wrapper .category-item:hover{
     color: red;
 }
+
+@media (min-width: 480px) {
+    .categories-container .category-filter-wrapper .category-item {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (min-width: 768px) {
+    .categories-container .category-filter-wrapper .category-item {
+        font-size: 1rem; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .categories-container .category-filter-wrapper .category-item {
+        font-size: 1.1rem;
+    }
+}
+
 
 .categories-container .category-item.active-category{
     color: red;
 }
 
 .categories-container .grid-meals{
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 40px;
     margin-top: 20px;
 }
