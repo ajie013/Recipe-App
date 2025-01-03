@@ -5,7 +5,8 @@ import './style/Categories.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState, useEffect } from "react";
 import MealItem from "../Home/MealItem";
-
+import '../../pages/Home/style/ViewModal.css'
+import '../../pages/Home/style/MealItem.css'
 
 interface categoryObj {
     idCategory: string;

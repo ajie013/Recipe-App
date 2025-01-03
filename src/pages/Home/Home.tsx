@@ -16,7 +16,6 @@ interface mealType {
 }
 
 const Home: React.FC = () =>{
-   
     
     const [search, setSearch] = useState<searchType>('');
     const [isLoading, setIsLoading] = useState<boolean>(false);

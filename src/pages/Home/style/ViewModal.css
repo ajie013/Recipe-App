@@ -10,7 +10,7 @@ body.no-scroll {
     overflow: hidden;
 }
 
-.home-container .modal-bg{
+ .modal-bg{
     z-index: 10;
     position: fixed;
     top: 0;
@@ -23,7 +23,7 @@ body.no-scroll {
     align-items: center;
 }
 
-.home-container .view-modal-container{
+ .view-modal-container{
     position: relative;
     max-width: 470px;
     width: 100%;
@@ -34,23 +34,18 @@ body.no-scroll {
     display: flex;
     margin: 20px;
     flex-direction: column;
-    overflow-y: auto; /* Ensure modal itself is scrollable */
+    overflow-y: auto;
 }
 
-.home-container .view-modal-container .content{
+ .view-modal-container .content{
   
-    /* margin: 10px; */
     overflow-y: scroll;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-   
 }
 
-.home-container .view-modal-container .content::-webkit-scrollbar{
+ .view-modal-container .content::-webkit-scrollbar{
     display: none;
 }
-.home-container .view-modal-container .x-mark{
+ .view-modal-container .x-mark{
     position: absolute;
     top: 5px;
     right: 5px;
@@ -59,11 +54,11 @@ body.no-scroll {
     font-size: 1.3rem;
 }
 
-.home-container .view-modal-container .x-mark:hover{
+ .view-modal-container .x-mark:hover{
     transform: scale(1.1);
     color: rgb(214, 10, 10);
 }
-.home-container .view-modal-container .modal-header{
+ .view-modal-container .modal-header{
     font-weight: bolder;
     font-size: 2rem;
     display: flex;
@@ -72,14 +67,14 @@ body.no-scroll {
     justify-content: center;
 }
 
-.home-container .view-modal-container .category{
+ .view-modal-container .category{
    
    
     
     margin-bottom: 10px;
     display: flex;
 }
-.home-container .view-modal-container .category .category-label{
+ .view-modal-container .category .category-label{
     background-color: var(--grey);
     text-align: center;
     display: block;
@@ -88,17 +83,17 @@ body.no-scroll {
     margin: 0 auto;
     padding: 5px 10px;
 }
-.home-container .view-modal-container .modal-header .name {
+ .view-modal-container .modal-header .name {
    
     text-align: center;
 }
-.home-container .view-modal-container .modal-header .tag {
+ .view-modal-container .modal-header .tag {
     font-weight: lighter;
     font-size: 0.7rem;
     text-align: center;
 }
 
-.home-container .view-modal-container .tag-wrapper{
+ .view-modal-container .tag-wrapper{
    
     display: flex;
     justify-content: center;
@@ -106,7 +101,7 @@ body.no-scroll {
     flex-wrap: wrap;
 
 }
-.home-container .view-modal-container .tag-wrapper .tag-item{
+ .view-modal-container .tag-wrapper .tag-item{
     padding: 5px 10px;
     margin-left: 5px;
     color: var(--space);
@@ -116,25 +111,25 @@ body.no-scroll {
 }
 
 
-.home-container .view-modal-container .meal-photo-container{
+ .view-modal-container .meal-photo-container{
     width: 90%;
     height: 240px;
   
     display: block;
     margin: 0 auto;
 }
-.home-container .view-modal-container .meal-photo{
+ .view-modal-container .meal-photo{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.home-container .view-modal-container .ingredients-header{
+ .view-modal-container .ingredients-header{
     margin-top: 10px;
     font-weight: bold;
     font-size: 1.7rem;
 }
-.home-container .view-modal-container .ingredients-wrapper{
+ .view-modal-container .ingredients-wrapper{
     
     width: 100%;
     margin-top: 10px;
@@ -143,7 +138,7 @@ body.no-scroll {
     flex-wrap: wrap;
     background-color: var(--grey);
 }
-.home-container .view-modal-container .ingredient-item{
+ .view-modal-container .ingredient-item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,21 +148,19 @@ body.no-scroll {
     box-shadow: 0px 0px 5px rgba(94, 93, 93, 0.297);
     
 }
-.home-container .view-modal-container .ingredient-item .ingredient-item-photo{
+ .view-modal-container .ingredient-item .ingredient-item-photo{
     width: 50px;
     height: 50px;
     filter: drop-shadow(0px 0px 5px rgba(28, 27, 27, 0.759));
 }
-.home-container .view-modal-container .instructions-wrapper{
-   
-}
-.home-container .view-modal-container .instructions-wrapper .instructions-header{
+ 
+ .view-modal-container .instructions-wrapper .instructions-header{
     margin-top: 10px;
     font-weight: bold;
     font-size: 1.7rem;
 }
 
-.home-container .view-modal-container .instructions-wrapper .instruction-text{
+ .view-modal-container .instructions-wrapper .instruction-text{
     text-align: center;
     padding: 0px 10px;
     /* text-indent: 20px; */

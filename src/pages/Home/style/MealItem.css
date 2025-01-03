@@ -6,7 +6,7 @@
    
 }
 
-.home-container .meal-item {
+ .meal-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -14,45 +14,44 @@
     transition: 0.3s ease-in-out;
  
 }
-
-.home-container  .meal-item.selected-meal{
+.meal-item.selected-meal{
     background-color: var(--black);
     color: var(--space)
 }
-.home-container .meal-item .item-checkbox{
+.meal-item .item-checkbox{
     accent-color: green;
     position: absolute;
 }
 
-.home-container .meal-item .img-wrapper {
+ .meal-item .img-wrapper {
     flex: 0 0 auto; 
 }
 
-.home-container .meal-item .info-wrapper {
+ .meal-item .info-wrapper {
     flex: 1;
 }
 
-.home-container .meal-item .button-wrapper {
+ .meal-item .button-wrapper {
     flex: 0 0 auto; 
 }
-.home-container .meal-item:hover{
+ .meal-item:hover{
     /* background-color: white; */
     transform: scale(1.02);
     box-shadow: 0px 0px 5px  #393e4645;
 }
 
-.home-container .meal-item img{
+ .meal-item img{
     width: 100%;
     height: 100%;
     object-fit: contain;
    
 }
-.home-container .meal-item .info-wrapper p{
+ .meal-item .info-wrapper p{
     font-size: 0.9rem;
     font-weight: lighter;
     text-align: center;
 }
-.home-container .meal-item .viewRecipeBtn{
+ .meal-item .viewRecipeBtn{
     padding: 5px 15px;
     font-weight: 0.9rem;
     font-weight: lighter;
@@ -62,7 +61,7 @@
     border: 1px solid black;
     transition: 0.3s ease-in-out;
 }
-.home-container .meal-item .viewRecipeBtn:hover{
+ .meal-item .viewRecipeBtn:hover{
     background-color: var(--grey);
     color: var(--space)
 }

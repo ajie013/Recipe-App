@@ -10,12 +10,10 @@ interface Meal {
     strMeal: string;
 }
 
-
 interface MealItemProps {
     meal : Meal;
 
 };
-
 
 const MealItem: React.FC<MealItemProps> = ({ meal} ) =>{
     const [modalToggler, setModalToggler] = useState<boolean>(false);
@@ -32,8 +30,7 @@ const MealItem: React.FC<MealItemProps> = ({ meal} ) =>{
             {modalToggler &&  <ViewModal setModalToggler={setModalToggler} id={meal.idMeal} />}
 
             <div className={`meal-item`} title={meal.strMeal}>
-               
-               
+                         
                 <div className="img-wrapper">
                     <img src={meal.strMealThumb} alt="" />
                 </div>

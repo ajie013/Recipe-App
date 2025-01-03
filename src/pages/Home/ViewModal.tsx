@@ -54,19 +54,19 @@ const ViewModal : React.FC<modalProps> = ({setModalToggler,id}) =>{
                 const newIngredient = {
                     name: res.data.meals[0][`strIngredient${i}`],
                     img_url: url
-                }
+                };
                
                 if(ingredient !== "" && ingredient !== " "){
                     setIngredients(prev => [...prev, newIngredient])
-                }            
-            }
+                };   
+            };
 
             for(let i  = 1; i <= 20;i++){
                 let measure = res.data.meals[0][`strMeasure${i}`]
                 if(measure !== "" && measure !== " "){
                     setMeasure(prev => [...prev, measure])
                 }            
-            }
+            };
         })
         .catch((err) => {
             console.log(err);
